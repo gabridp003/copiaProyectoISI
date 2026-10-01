@@ -282,7 +282,7 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | **NFR-01** | **NFR-Q** (Eficiencia; Rendimiento) | Soporte de 100 usuarios concurrentes a 10 op/s. El 95% de las lecturas responderá en $\le$ 2 s y el 95% de publicaciones en $\le$ 3 s, medido en servidor sin escalado manual. | **G** | - |
 | **NFR-02** | **NFR-Q** (Disponibilidad) | Disponibilidad mensual del 99,5% en servicio 24/7. Mantenimientos (aviso $\ge$48 h, $\le$4 h/mes, de 02:00 a 06:00 h) no cuentan como indisponibilidad. | **G** | - | 
 | **NFR-03** | **NFR-Q** (Fiabilidad; Recuperación) | Copias de seguridad diarias de datos de salud y recetas. Ante incidente grave: RTO $\le$ 4 horas y RPO $\le$ 24 horas. | **G** | - | 
-| **NFR-04** | **NFR-I** (Seguridad; Autenticación) | Autenticación con Google mediante OAuth 2.0 / OpenID Connect sobre HTTPS, sin almacenar contraseñas de Google. | **G** | - | Prueba de login con cuenta de test e inspección de la base de datos. | - |
+| **NFR-04** | **NFR-I** (Seguridad; Autenticación) | Autenticación con Google mediante OAuth 2.0 / OpenID Connect sobre HTTPS, sin almacenar contraseñas de Google. | **G** | - |
 | **NFR-05** | **NFR-I** (Accesibilidad; Usabilidad) | Cumplimiento de WCAG 2.2 Nivel AA en todas las pantallas y flujos principales, sin fallos de nivel A ni AA. | **G** | - |
 | **NFR-06** | **NFR-I** (Portabilidad; Idiomas) | Interfaz con cambio dinámico de idioma entre castellano y gallego en el 100% de textos, formularios y mensajes. | **G** | - |
 | **NFR-10** | **NFR-R** (Diseño; Compatibilidad) | Aplicación web responsiva en estándares abiertos (HTML5/CSS/JS) para navegadores habituales (Chrome, Safari, Firefox, Edge, etc.) sin software nativo. | **G** | - | 
