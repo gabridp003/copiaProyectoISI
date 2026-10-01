@@ -268,6 +268,16 @@ enlazar a los términos de esta sección, pero no los definirá de nuevo.
 
 | Término | Definición en Proyecto Simbiosis | Fuente |
 | --- | --- | --- |
+| **Enfermedad Inflamatoria Intestinal (EII)** | Grupo de condiciones digestivas crónicas que afectan a los usuarios principales y sobre las que se orientan las soluciones dietéticas del sistema. | Documento de Visión y Alcance, Sección 1.1 |
+| **Receta adaptada** | Receta filtrada o localizada según el perfil y restricciones del paciente, sin que el sistema modifique automáticamente ingredientes ni cantidades. | Acta de captura A03, Sección 3 |
+| **Receta validada** | Receta creada por un nutricionista o propuesta por un usuario y aprobada por un nutricionista acreditado tras revisar su idoneidad clínica. | Acta de captura A03, Sección 3; Acta de acuerdos técnicos, 2.4.1 |
+| **Nutricionista** | Rol común que engloba a médicos y nutricionistas con acreditación profesional verificada, con permisos para validar recetas y publicar artículos. | Acta de captura A03, Sección 1.3 |
+| **Cuidador** | Perfil de usuario que asiste a uno o más pacientes en la gestión de su dieta, requiriendo su autorización explícita para acceder a sus datos de salud. | Documento de Visión y Alcance, Sección 3.1; Acta de captura A03, Sección 2 |
+| **Coordinador** | Único rol administrador encargado de moderar contenidos, revisar reportes y aprobar las cuentas de cuidadores y nutricionistas. | Documento de Visión y Alcance, Sección 3.1; Acta de captura A03, Sección 4 |
+| **Asociación** | Vinculación formal en la plataforma entre un paciente y un cuidador que otorga a este último acceso a la información de salud autorizada. | Acta de captura A03, Sección 2; Acta de acuerdos técnicos, 2.2.3 |
+| **Publicación de salud** | Artículo divulgativo breve elaborado por un nutricionista sobre hábitos saludables, sin valoración numérica ni requerimiento de validación previa. | Acta de captura A03, Sección 5 |
+| **Datos de salud** | Información sobre patologías, síntomas o restricciones del paciente, tratada como categoría especial de protección bajo el RGPD. | Documento de Visión y Alcance, Sección 2.5; Acta de captura A03, Sección 7.1 |
+| **Reporte de contenido** | Aviso enviado por un usuario al coordinador señalando recetas, comentarios o perfiles que infringen la política de publicación. | Acta de captura A03, Sección 4; Acta de acuerdos técnicos, 2.4.1 |
 
 ## 10. Modelos de análisis
 
