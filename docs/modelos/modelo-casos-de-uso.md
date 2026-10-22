@@ -201,6 +201,45 @@ Repite el esquema siguiente para cada caso seleccionado. Conserva sus referencia
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
+### 6.2 Descripción de un caso
+
+**Identificador y nombre:** [UC-05 - Buscar recetas.]
+
+**Estado de la descripción:** [Completo y aprobado para L06]
+
+**Objetivo:** [La persona quiere localizar una receta que cumpla sus criterios y consultar su detalle.]
+
+**Participantes:** [Participan un analista y una persona usuaria registrada.]
+
+**Precondiciones:** [1) La persona usuaria tiene una cuenta activa y una sesión iniciada en el sistema.
+2) El sistema cuenta con un catálogo de recetas publicadas y validadas disponibles para ser consultadas.]
+
+**Inicio:** [La persona usuaria selecciona la opción de acceder a la sección o pantalla de búsqueda de recetas dentro de la aplicación.].
+
+**Escenario principal:** [1) La persona usuaria accede a la sección de búsqueda de recetas en la aplicación.
+2) La persona usuaria introduce o selecciona al menos un criterio de búsqueda
+3) La persona usuaria solicita ejecutar la búsqueda.
+4) El sistema comprueba que se cumple el requisito de indicar al menos un criterio y que no existe ningún conflicto
+5) El sistema valida los datos y busca en el catálogo aquellas recetas publicadas y validadas que cumplen conjuntamente con todos los criterios indicados.
+6)El sistema muestra los resultados ordenados por fecha de publicación (con las más recientes primero), presentando en cada vista previa el título, la imagen (o «Sin imagen»), la calificación promedio (o «Sin valoraciones») y la descripción breve.
+7) La persona usuaria selecciona una de las recetas de los resultados para ver su detalle
+8) El sistema muestra la información detallada de la receta seleccionada]
+
+**Alternativas y errores:** [1.1 La persona intenta entrar en la aplicación pero el sistema no responde. El usuario se lo comunica al sistema, sale de la aplicación, posteriormente vuelve a entrar en la sección de búsqueda.
+2.1 La persona usuaria intenta buscar sin seleccionar ningún criterio, o selecciona el mismo ingrediente para incluirlo y excluirlo a la vez.El sistema señala el problema (pide indicar al menos un criterio o avisa del conflicto con el ingrediente) y no ejecuta la búsqueda, entonces el usuario debe corregir los criterios de búsqueda y repetir esta.
+4.1. Se detecta un conflicto de ingredientes. La solución es que la persona usuaria corrija la selección del ingrediente y vuelva a solicitar la búsqueda.
+6.1 La búsqueda no obtiene resultados. El sistema comprueba que ninguna receta del catálogo cumple con todos los criterios indicados, y se lo comunica al usuario.]
+
+**Postcondiciones:** [En caso de éxito: El sistema mantiene registrada la última búsqueda realizada, conservando los criterios y el orden aplicados para permitir un retorno fluido desde la vista de detalle de la receta.
+También, La persona usuaria visualiza correctamente el listado de resultados o el detalle de la receta seleccionada.]
+
+**Reglas y NFR pertinentes:** [] 
+
+
+**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+
+
+
 ## 7 Continuidad entre iteraciones
 
 E1 establece la primera vista del modelo, con siete actores y quince casos de uso: UC-01 a UC-07, UC-09 a UC-11 y UC-31 a UC-35.
