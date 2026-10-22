@@ -163,25 +163,41 @@ Repite el esquema siguiente para cada caso seleccionado. Conserva sus referencia
 
 ### 6.1 Descripción de un caso
 
-**Identificador y nombre:** [Indica el caso.]
+**Identificador y nombre:** [UC-05 - Actualizar perfil]
 
-**Estado de la descripción:** [Indica el nivel de detalle y el alcance desarrollado.]
+**Estado de la descripción:** [Completo y aprobado para L06]
 
-**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+**Objetivo:** [Permitir que la persona usuaria registrada modifique los datos permitidos de su perfil (nombre completo, teléfono, dirección postal y preferencias dietéticas) y conserve los cambios en el sistema.]
 
-**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+**Participantes:** [participan un analista y una persona usuaria registrada.]
 
-**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+**Precondiciones:** [La persona ya tiene una cuenta activa y una sesión iniciada. 
+                     El registro, el inicio de sesión, el cambio de contraseña y la eliminación de la cuenta quedan fuera de esta consulta.]
 
-**Inicio:** [Indica qué acción o suceso inicia el caso.]
+**Inicio:** [El sistema muestra los valores actuales del perfil de la persona usuaria (nombre completo, teléfono, dirección postal y preferencias dietéticas), indicando claramente que el alias y el correo electrónico son de solo lectura (conforme a FR-019).
 
-**Escenario principal:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal:** [1) El usuario entra en la aplicación para actualizar su perfil.
+2) El usuario entra en su perfil dentro de la aplicación.
+3) El usuario edita su nombre y datos dentro de los ajustes de su perfil.
+4) Posteriormente, el usuario guarda los datos nuevos.
+5) El sistema confirma que los datos se han actualizado correctamente.]
 
-**Alternativas y errores:** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Alternativas y errores:** [1.1 El usuario intenta entrar en la aplicación pero esta no responde, y el usuario se lo comunica al sistema.
+2.1 El sistema no puede cargar el perfil por un error de conexión. Ante esto, el sistema muestra un mensaje de aviso informando del problema, y le comunica al usuario que intente entrar cuando tenga conexión.
+3.1. Durante la edición, el usuario decide no continuar y pulsa el botón de cancelar. Aquí sistema descarta los cambios introducidos, el perfil conserva los valores anteriores intactos y el caso de uso finaliza.
+4.1. Al intentar guardar, el sistema detecta que un campo obligatorio está vacío o mal escrito. El sistema avisa al usuario señalando el campo incorrecto y no aplica los cambios. La solución es que el usuario corrija el error en la pantalla y vuelva a solicitar el guardado
+5.1. Ocurre un error interno en la base de datos justo en el momento de registrar la información. El sistema notifica el fallo al usuario y mantiene los datos en la pantalla para que no se pierdan. La solución es permitir que el usuario pulse de nuevo el botón de guardar para reintentar la operación una vez restablecida la conexión.]
 
-**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+**Postcondiciones:** [1) El perfil contiene los cambios guardados y el usuario recibe la confirmación.
+2)Después de actualizar el perfil, hay que comprobar que no se cambian ni el alias ni el correo.
+3) Comprobar que no queda una actualización parcial, ya que los cambios deben realizarse en conjunto.
+4) Si la actualización de los datos se realizó de manera errónea, el sistema debe conservar los datos del perfil que había anteriormente al intento de actualización.]
 
-**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+
+**Reglas y NFR pertinentes:** [1)El nombre completo y el teléfono son campos obligatorios y no pueden dejarse vacíos ni formados solo por espacios.
+2)El alias y el correo electrónico están bloqueados y son de solo lectura
+3)El sistema debe conservar los datos introducidos por el usuario en la pantalla si ocurre un error de validación, evitando la pérdida de información.] 
+
 
 **Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
