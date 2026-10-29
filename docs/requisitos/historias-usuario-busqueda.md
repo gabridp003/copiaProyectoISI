@@ -15,17 +15,23 @@
 
 ## Épica de búsqueda
 
+Como cliente de una aplicación de consulta de recetas saludables, quiero buscar recetas escribiendo una palabra o frase, además de también poder buscar incluyendo en la búsqueda un ingrediente o exluyéndolo, para poder guardarla en mi sección de favoritos y compartir mi experiencia.
+
 Como [rol], quiero [capacidad amplia], para [beneficio].
 
 **Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
 ## Justificación de la división
 
-[Justificación de los resultados útiles que separa la división.]
+[Divido la épica en historias para poder enfocarme en cada uno de los detalles que debe cumplir la aplicación.]
 
 ## US-01
 
-**Título:** [Capacidad]
+**Título:** [Buscar receta utilizándo una palabra o frase]
+
+Como cliente de una aplicación de consulta de recetas saludables, quiero encontrar la receta con una palabra o frase que la identifique, para encontrar la receta de forma rápida.
+
+
 
 Como [rol], quiero [capacidad], para [beneficio].
 
@@ -33,13 +39,15 @@ Como [rol], quiero [capacidad], para [beneficio].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado [que se permite la búsqueda de recetas mediante una palabra o frase], cuando [el cliente introduce una palabra o frase que no está incluída en el título o descripción ], entonces [el sistema notificará al usuario de que no hay resultados para la búsqueda].
+- **CA-02.** Dado [que la búsqueda búsqueda contiene una palabra], cuando [el cliente realice la búsqueda], entonces [le aparecerán las recetas cuyo en título o descripción aparezca dicha palabra].
+- **CA-03.** Dado [que la búsqueda contiene una frase], cuando [el cliente realice la búsqueda], entonces [aparecerán recetas cuyo título o descripción contienen la frase en el mismo orden].
 
 ## US-02
 
-**Título:** [Capacidad]
+**Título:** [Buscar receta utilizando como filtro un ingrediente]
+
+Como cliente de una aplicación de consulta de recetas saludables, quiero encontrar recetas utilizando como filtro un ingrediente, para encontrar recetas que utilicen dicho ingrediente.
 
 Como [rol], quiero [capacidad], para [beneficio].
 
@@ -47,13 +55,15 @@ Como [rol], quiero [capacidad], para [beneficio].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado [que la búsqueda contiene ingredientes a exluír e incluír], cuando [el cliente quiera incluír y excluír el mismo ingrediente], entonces [el sistema informa de que no puede incluír y excluír un ingrediente al mismo tiempo].
+- **CA-02.** Dado [que la búsqueda contiene varios ingrdientes], cuando [el cliente quiera modificar su búsqueda], entonces [el sistema le permitirá tanto incluír como retirar ingrdientes].
+- **CA-03.** Dado [que la búsqueda contiene varios ingredientes a incluír], cuando [el cliente ejecute la búsqueda], entonces [el sistema solo informará de recetas que contengan todos los ingredientes seleccionados].
 
 ## US-03
 
-**Título:** [Capacidad]
+**Título:** [Buscar receta utilizando como filtro la exlusión de un ingrediente]
+
+Como cliente de una aplicación de consulta de recetas saludables, quiero encontrar recetas utilizando como filtro la exlusión de un ingrediente, para encontrar recetas que no tengan dicho ingrediente.
 
 Como [rol], quiero [capacidad], para [beneficio].
 
@@ -61,9 +71,9 @@ Como [rol], quiero [capacidad], para [beneficio].
 
 ### Criterios de aceptación
 
-- **CA-01.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
-- **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
+- **CA-01.** Dado [que la búsqueda contiene ingredientes a exluír e incluír], cuando [el cliente quiera incluír y excluír el mismo ingrediente], entonces [el sistema informa de que no puede incluír y excluír un ingrediente al mismo tiempo].
+- **CA-02.** Dado [que la búsqueda contiene un ingrediente a excluír], cuando [el cliente ejecute la búsqueda], entonces [el sistema mostrará solo los resultados donde no aparezca dicho ingrediente].
+- **CA-03.** Dado [que la búsqueda contiene un ingrediente a exluír repetido], cuando [el cliente ejecute la búsqueda], entonces [el sistema lo convertirá en solo un ingrediente].
 
 ## Revisión INVEST
 
