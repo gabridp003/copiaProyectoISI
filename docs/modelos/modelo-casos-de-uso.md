@@ -236,7 +236,8 @@ También, La persona usuaria visualiza correctamente el listado de resultados o 
 **Reglas y NFR pertinentes:** [] 
 
 
-**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+**Preguntas abiertas:** <img width="1920" height="1080" alt="actividad-buscar-recetas-uc21 png" src="https://github.com/user-attachments/assets/ebf979c8-d051-4ed9-943f-c77d7a2b72be" />
+
 
 
 
